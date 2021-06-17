@@ -1,37 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Typscritp</title>
-
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Typescript</title>
 </head>
+
 <body>
     <div class="container">
-        <h1>Projeto Typer</h1>
-        <p class="frase">>Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-            magna aliqua.</p>
-    
-        <ul class="informacoes">
-            <li><span id="tamanho-frase">5</span> palavras</li>
-            <li><span id="tempo-digitacao">10</span> segundos</li>
+        <h1>Prova 03 - Jquery </h1>
+        <p class="frase">Projeto JQuery.</p>
+        <ul class="informacoes center">
+            <li>
+                <i class="small material-icons icones">description</i>
+                <span id="tamanho-frase">19</span> Palavras
+            </li>
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <span id="tempo-digitacao">10</span> Segundos
+            </li>
         </ul>
-    
-        <textarea class="campo-digitacao" rows="8" cols ="40"></textarea>
-        <button id="botao-reiniciar">Reiniciar Jogo</button>
+        <textarea class="campo-digitacao" rows="8" cols="40"></textarea>
+        <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red">
+            <i class="material-icons">restore</i>
+        </a>
         <ul>
             <li><span id="contador-caracteres">0</span> caracteres</li>
             <li><span id="contador-palavras">0</span> palavras</li>
         </ul>
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>No. de palavras</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Usuario Exemplo</td>
+                        <td>99</td>
+                        <td>
+                            <a href="#" class="botao-remover">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </div>
-
     <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script> 
-    
+    <script src="js/main.js"></script>
 </body>
+
 </html>
